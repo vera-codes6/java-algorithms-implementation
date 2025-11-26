@@ -1,5 +1,6 @@
 package com.thealgorithms.puzzlesandgames;
 
+// import java.util.*;
 import java.util.List;
 
 /**
@@ -51,6 +52,8 @@ final class TowerOfHanoi {
      *                         </p>
      */
     public static void shift(int n, String startPole, String intermediatePole, String endPole, List<String> result) {
+        // recursive
+        
         if (n != 0) {
             // Move n-1 discs from startPole to intermediatePole
             shift(n - 1, startPole, endPole, intermediatePole, result);
