@@ -106,7 +106,8 @@ final class Sudoku {
                 board[row][col] = num;
                 if (solveSudoku(board, n)) {
                     return true;
-                } else {
+                }
+                else {
                     // replace it
                     board[row][col] = 0;
                 }
