@@ -57,6 +57,7 @@ public final class MinimumWindowSubstring {
 
                 char leftChar = s.charAt(left);
                 windowFreq.put(leftChar, windowFreq.get(leftChar) - 1);
+                
                 if (tFreq.containsKey(leftChar) && windowFreq.get(leftChar) < tFreq.get(leftChar)) {
                     count--;
                 }

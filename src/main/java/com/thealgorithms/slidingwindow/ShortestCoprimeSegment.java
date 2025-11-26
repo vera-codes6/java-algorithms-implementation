@@ -54,12 +54,15 @@ public final class ShortestCoprimeSegment {
                 l++;
             }
         }
+
         if (shortestLength > n) {
             shortestLength = -1;
         }
+
         if (shortestLength == -1) {
             return new long[] {};
         }
+        
         return Arrays.copyOfRange(arr, beginsAt, beginsAt + shortestLength);
     }
 
@@ -70,9 +73,11 @@ public final class ShortestCoprimeSegment {
     private static long gcd(long a, long b) {
         if (a < b) {
             return gcd(b, a);
-        } else if (b == 0) {
+        } 
+        else if (b == 0) {
             return a;
-        } else {
+        } 
+        else {
             return gcd(a % b, b);
         }
     }
