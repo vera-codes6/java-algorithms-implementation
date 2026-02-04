@@ -11,11 +11,6 @@ import java.util.PriorityQueue;
  * right children.
  */
 
-
-
-
-
-
 class HuffmanNode {
     int data;
     char c;
@@ -31,8 +26,10 @@ class HuffmanNode {
     HuffmanNode(char c, int data) {
         this.c = c;
         this.data = data;
+        
         this.left = null;
         this.right = null;
+
     }
 
     /**
