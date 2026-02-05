@@ -26,10 +26,8 @@ class HuffmanNode {
     HuffmanNode(char c, int data) {
         this.c = c;
         this.data = data;
-        
         this.left = null;
         this.right = null;
-
     }
 
     /**
@@ -49,7 +47,9 @@ class HuffmanNode {
 class HuffmanComparator implements Comparator<HuffmanNode> {
     @Override
     public int compare(HuffmanNode x, HuffmanNode y) {
+        
         return Integer.compare(x.data, y.data);
+
     }
 }
 
