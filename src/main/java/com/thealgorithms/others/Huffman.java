@@ -47,9 +47,7 @@ class HuffmanNode {
 class HuffmanComparator implements Comparator<HuffmanNode> {
     @Override
     public int compare(HuffmanNode x, HuffmanNode y) {
-        
         return Integer.compare(x.data, y.data);
-
     }
 }
 
