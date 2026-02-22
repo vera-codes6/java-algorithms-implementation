@@ -10,6 +10,7 @@ import java.util.PriorityQueue;
  * Each node contains a character, its frequency, and references to left and
  * right children.
  */
+
 class HuffmanNode {
     int data;
     char c;
