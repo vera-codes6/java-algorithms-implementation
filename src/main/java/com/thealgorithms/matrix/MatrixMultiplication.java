@@ -22,7 +22,9 @@ package com.thealgorithms.matrix;
  */
 
 public final class MatrixMultiplication {
+    
     private MatrixMultiplication() {
+
     }
 
     /**
