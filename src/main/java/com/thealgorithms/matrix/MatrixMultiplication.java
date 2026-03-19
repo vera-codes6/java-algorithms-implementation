@@ -22,9 +22,7 @@ package com.thealgorithms.matrix;
  */
 
 public final class MatrixMultiplication {
-    
     private MatrixMultiplication() {
-
     }
 
     /**
@@ -37,8 +35,10 @@ public final class MatrixMultiplication {
      */
     public static double[][] multiply(double[][] matrixA, double[][] matrixB) {
         // Check the input matrices are not null
+
         if (matrixA == null || matrixB == null) {
             throw new IllegalArgumentException("Input matrices cannot be null");
+            
         }
 
         // Check for empty matrices
