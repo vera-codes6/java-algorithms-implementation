@@ -35,8 +35,10 @@ public final class MatrixMultiplication {
      */
     public static double[][] multiply(double[][] matrixA, double[][] matrixB) {
         // Check the input matrices are not null
+
         if (matrixA == null || matrixB == null) {
             throw new IllegalArgumentException("Input matrices cannot be null");
+            
         }
 
         // Check for empty matrices
@@ -44,12 +46,15 @@ public final class MatrixMultiplication {
             throw new IllegalArgumentException("Input matrices must not be empty");
         }
 
+
         // Validate the matrix dimensions
         if (matrixA[0].length != matrixB.length) {
             throw new IllegalArgumentException("Matrices cannot be multiplied: incompatible dimensions.");
         }
 
+
         int rowsA = matrixA.length;
+
         int colsA = matrixA[0].length;
         int colsB = matrixB[0].length;
 
@@ -60,7 +65,9 @@ public final class MatrixMultiplication {
         for (int i = 0; i < rowsA; i++) {
             for (int j = 0; j < colsB; j++) {
                 for (int k = 0; k < colsA; k++) {
+
                     result[i][j] += matrixA[i][k] * matrixB[k][j];
+
                 }
             }
         }
