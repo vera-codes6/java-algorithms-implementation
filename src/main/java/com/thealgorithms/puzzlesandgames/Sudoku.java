@@ -127,12 +127,14 @@ final class Sudoku {
         // Print the board in a nxn grid format
         // if n=9, print the board in a 9x9 grid format
         // if n=16, print the board in a 16x16 grid format
+
         for (int r = 0; r < n; r++) {
             for (int d = 0; d < n; d++) {
                 System.out.print(board[r][d]);
                 System.out.print(" ");
             }
             System.out.print("\n");
+
 
             if ((r + 1) % (int) Math.sqrt(n) == 0) {
                 System.out.print("");
