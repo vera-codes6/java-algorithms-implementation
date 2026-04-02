@@ -81,6 +81,7 @@ final class Sudoku {
 
         // Find the next empty cell
         for (int i = 0; i < n; i++) {
+
             for (int j = 0; j < n; j++) {
                 if (board[i][j] == 0) {
                     row = i;
@@ -89,6 +90,7 @@ final class Sudoku {
                     break;
                 }
             }
+            
             if (!isEmpty) {
                 break;
             }
@@ -103,10 +105,13 @@ final class Sudoku {
         // Eg: n=9 for a standard 9x9 Sudoku puzzle, n=16 for a 16x16 puzzle, etc.
         for (int num = 1; num <= n; num++) {
             if (isSafe(board, row, col, num)) {
+                
                 board[row][col] = num;
                 if (solveSudoku(board, n)) {
                     return true;
                 }
+
+
                 else {
                     // replace it
                     board[row][col] = 0;
@@ -134,7 +139,6 @@ final class Sudoku {
                 System.out.print(" ");
             }
             System.out.print("\n");
-
 
             if ((r + 1) % (int) Math.sqrt(n) == 0) {
                 System.out.print("");
